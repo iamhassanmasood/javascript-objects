@@ -4,7 +4,7 @@
     firstName: "Hassan",
     lastName: "Masood",
     age: 26,
-    isAdult: function () {
+    isAdult() {
       return this.age >= 18;
     },
   };
