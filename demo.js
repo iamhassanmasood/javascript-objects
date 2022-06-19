@@ -8,5 +8,15 @@
       return this.age >= 18;
     },
   };
-  display(person.isAdult());
+
+  const user = {
+    firstName: "Hassan",
+    lastName: "Masood",
+    age: 26,
+    isAdult() {
+      return this.age >= 18;
+    },
+  };
+
+  display(Object.is(person, user)); //false
 })();
