@@ -9,7 +9,7 @@
     },
   };
 
-  const user = person;
-
-  display(Object.is(person, user)); //true
+  const user = {};
+  Object.assign(user, person);
+  display(user);
 })();
