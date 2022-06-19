@@ -9,14 +9,7 @@
     },
   };
 
-  const user = {
-    firstName: "Hassan",
-    lastName: "Masood",
-    age: 26,
-    isAdult() {
-      return this.age >= 18;
-    },
-  };
+  const user = person;
 
-  display(Object.is(person, user)); //false
+  display(Object.is(person, user)); //true
 })();
